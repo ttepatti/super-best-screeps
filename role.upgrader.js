@@ -6,7 +6,7 @@ var roleUpgrader = {
         function goHome() {
             var spawn = new RoomPosition(36, 31, 'W3N48');
             // Check current coords, are we already at spawn?
-            if (creep.pos = spawn) {
+            if (creep.pos.x == spawn.x && creep.pos.y == spawn.y && creep.pos.roomName == spawn.roomName) {
                 creep.memory.goHome = false;
             } else {
                 // move to my current spawner
